@@ -3,7 +3,7 @@ public class TestHarness {
 
 	public static void main(String[] args) {
 
-		SelSortBinSearch selSortAndBinSearch = new SelSortBinSearch();
+		SelSortAndBinSearch selSortAndBinSearch = new SelSortAndBinSearch();
 		selSortAndBinSearch.initValues();
 		selSortAndBinSearch.printValues();
 		System.out.println("values is sorted: " + selSortAndBinSearch.isSorted());
@@ -13,7 +13,7 @@ public class TestHarness {
 		TEST_BinarySearch(selSortAndBinSearch);
 	}
 
-	public static void TEST_SelectionSort(SelSortBinSearch tester) {
+	public static void TEST_SelectionSort(SelSortAndBinSearch tester) {
 
 		tester.selectionSort();
 		tester.printValues();
@@ -21,7 +21,7 @@ public class TestHarness {
 		System.out.println();
 	}
 
-	public static void TEST_BinarySearch(SelSortBinSearch tester) {
+	public static void TEST_BinarySearch(SelSortAndBinSearch tester) {
 		System.out.println("Binary Search:");
 		System.out.println("0 is in array: " + tester.binarySearch(0, 0, SelSortAndBinSearch.SIZE - 1));
 		System.out.println("1 is in array: " + tester.binarySearch(1, 0, SelSortAndBinSearch.SIZE - 1));
